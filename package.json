@@ -1,7 +1,8 @@
 {
   "license": "MIT",
   "scripts": {
-    "deployApi": "./node_modules/.bin/tsc && node ./dist/index.js"
+    "build": "./node_modules/.bin/tsc",
+    "deployApi": "yarn build && node ./dist/index.js"
   },
   "dependencies": {
     "@nexys/api-gen": "^0.0.5"
